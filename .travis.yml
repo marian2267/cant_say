@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t marian2267/cant_say -f Dockerfile.dev
