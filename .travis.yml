@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t marian2267/cant_say -f Dockerfile.dev
+  - docker build -t marian2267/cant_say -f Dockerfile.dev .
 
 script:
   - docker run marian2267/cant_say npm run test -- --coverage
