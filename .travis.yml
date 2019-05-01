@@ -6,7 +6,7 @@ before_install:
   - docker build -t marian2267/cant_say -f Dockerfile.dev .
 
 script:
-  - docker run marian2267/cant_say npm run test -- --watchAll=false
+  - docker run marian2267/cant_say CI=true npm run test
 
 deploy:
   provider: elasticbeanstalk
